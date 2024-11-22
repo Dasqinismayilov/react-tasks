@@ -5,7 +5,7 @@ import Wine from './Wine'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Wine title="THis is a title"  description="This is a desc" rating="3.5"/>
-    <Wine title="title"  description=" desc" rating="5.5"/>
+    <Wine title="alessa"  description="This  desc" rating="3.5"/>
+    <Wine title="fernando"  description=" Those desc" rating="5.5"/>
   </StrictMode>,
 )
