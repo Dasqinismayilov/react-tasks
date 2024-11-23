@@ -1,7 +1,8 @@
 import { Component } from "react";
 
+
 class Title extends Component {
-  name = "a";
+  name = "aksin";
 
   clickHandler = (event) => {
     console.log(this.name);
@@ -22,3 +23,14 @@ class Title extends Component {
 }
 
 export default Title;
+
+
+
+
+
+
+
+
+
+
+
