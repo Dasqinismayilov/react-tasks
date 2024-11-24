@@ -1,0 +1,19 @@
+.cv{
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    background-color: rgb(129, 229, 229);
+  }
+  .skills{
+    background-color: antiquewhite;
+  }
+.education{
+    background-color: rgb(166, 241, 241);
+}
+.experience{
+    background-color: rgb(227, 219, 219);
+}
