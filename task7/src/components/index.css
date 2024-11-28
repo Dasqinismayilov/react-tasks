@@ -44,7 +44,7 @@ label {
 }
 
 button {
-  background-color: orange;
+  background-color: grey;
   color: white;
   border: none;
   padding: 10px;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: grey
+  background-color: rgb(210, 175, 175)
 }
 
 h1 {
