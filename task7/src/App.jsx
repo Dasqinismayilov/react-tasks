@@ -1,18 +1,10 @@
-import React, { useState } from "react";
-import Profile from "./components/Profile";
-function App() {
-  const [showProfile, setShowProfile] = useState(false);
-
+import React from 'react'
+import Form from "./components/Form";
+export default function App() {
   return (
-    <div className="userprofile">
-      <button className="profile-button"
-        onClick={() => setShowProfile(!showProfile)}
-       >
-        {showProfile ? "Close Profile" : "Open Profile"}
-      </button>
-      {showProfile && <Profile />}
+    <div>
+      <h1>Form</h1>
+      <Form/>
     </div>
-  );
+  )
 }
-
-export default App;
