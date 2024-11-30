@@ -23,27 +23,27 @@ const Form = () => {
         let errors = {};
 
         if (formData.name.trim() === "") {
-            errors.name = "Ad mütləq daxil edilməlidir";
+            errors.name = "Ad daxil edin";
         }
 
         if (formData.surname.trim() === "") {
-            errors.surname = "Soyad mütləq daxil edilməlidir";
+            errors.surname = "Soyad daxil edin";
         }
 
         if (formData.phone.trim() === "") {
-            errors.phone = "Telefon nömrəsi mütləq daxil edilməlidir";
+            errors.phone = "Telefon nömrəsi daxil edin";
         } else if (!/^\d{10}$/.test(formData.phone)) {
-            errors.phone = "Telefon nömrəsi düzgün formatda deyil (10 rəqəm olmalıdır)";
+            errors.phone = "Telefon nömrəsi düzgün deyil (10 rəqəm olmalıdır)";
         }
 
         if (formData.email.trim() === "") {
-            errors.email = "E-mail mütləq daxil edilməlidir";
+            errors.email = "E-mail daxil edin";
         } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
             errors.email = "E-mail düzgün deyil";
         }
 
         if (formData.comment.trim() === "") {
-            errors.comment = "Şərh daxil edilməlidir";
+            errors.comment = "Şərh daxil edin";
         }
 
         return errors;
