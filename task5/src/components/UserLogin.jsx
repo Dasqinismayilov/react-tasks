@@ -1,23 +1,25 @@
 import React, { useState } from "react";
-import React from "react";
+import "./Login.css";
 function UserLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
 
+ //////
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
 
     if (!value.endsWith(".ru")) {
-      console.warn("Yalnız .ru domenlərinə icazə verilir.");
-      setEmailError("Yalnız .ru domenlərinə icazə verilir.");
+      console.warn("Yalnız .ru domenləri.");
+      setEmailError("Yalnız .ru domenləri.");
     } else {
       setEmailError("");
     }
   };
 
+  /////
   const handlePasswordChange = (e) => {
     const value = e.target.value;
     setPassword(value);
@@ -29,7 +31,7 @@ function UserLogin() {
       setPasswordError("");
     }
   };
-
+/////
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!emailError && !passwordError && email && password) {
@@ -39,68 +41,36 @@ function UserLogin() {
     }
   };
 
+
+/////
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{
-        margin: "20px auto",
-        padding: "20px",
-        maxWidth: "400px",
-        border: "1px solid #ccc",
-        borderRadius: "10px",
-        backgroundColor: "#f9f9f9",
-      }}
-    >
+    <form onSubmit={handleSubmit} className="user-login-form">
       <h2>User Login</h2>
-      <div style={{ marginBottom: "10px" }}>
-        <label style={{ display: "block", marginBottom: "5px" }}>E-mail:</label>
+      <div className="form-group">
+        <label>E-mail:</label>
         <input
           type="email"
           value={email}
           onChange={handleEmailChange}
-          style={{
-            width: "100%",
-            padding: "8px",
-            border: emailError ? "1px solid red" : "1px solid #ccc",
-            borderRadius: "5px",
-          }}
+          className={emailError ? "error" : ""}
           placeholder="example@domain.ru"
         />
-        {emailError && (
-          <span style={{ color: "red", fontSize: "12px" }}>{emailError}</span>
-        )}
+        {emailError && <span className="error-text">{emailError}</span>}
       </div>
 
-      <div style={{ marginBottom: "10px" }}>
-        <label style={{ display: "block", marginBottom: "5px" }}>Password:</label>
+      <div className="form-group">
+        <label>Password:</label>
         <input
           type="password"
           value={password}
           onChange={handlePasswordChange}
-          style={{
-            width: "100%",
-            padding: "8px",
-            border: passwordError ? "1px solid red" : "1px solid #ccc",
-            borderRadius: "5px",
-          }}
+          className={passwordError ? "error" : ""}
           placeholder="Minimum 8 characters"
         />
-        {passwordError && (
-          <span style={{ color: "red", fontSize: "12px" }}>{passwordError}</span>
-        )}
+        {passwordError && <span className="error-text">{passwordError}</span>}
       </div>
 
-      <button
-        type="submit"
-        style={{
-          padding: "10px 20px",
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}
-      >
+      <button type="submit" className="login-button">
         Login
       </button>
     </form>

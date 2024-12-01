@@ -1,0 +1,85 @@
+.app-container {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 10; 
+    left: 535px;
+    width: 440px;
+    padding: 10px 0;
+    background-color: rgb(78, 168, 78);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; 
+  }
+  
+  .user-login-form {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    position: relative; 
+  }
+  
+  .user-login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group input.error {
+    border: 1px solid red;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .app-container {
+      padding: 10px;
+    }
+    .toggle-button {
+      top: 0;
+      left: 0;
+      width: 100%; 
+      padding: 8px 0;
+    }
+    .user-login-form {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  }
+  
