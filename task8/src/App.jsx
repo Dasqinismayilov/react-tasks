@@ -1,5 +1,5 @@
 import React from "react";
-import Dice from "./Dice"; 
+import Dice from "./components/Dice"; 
 
 function App() {
   return (
