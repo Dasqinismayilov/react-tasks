@@ -1,0 +1,30 @@
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #61db55;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color:rgb(43, 42, 39) ;
+    transform: scale(1.05);
+  }
+  
+
+  .custom-button.warn {
+    border: 2px solid red;
+    background-color: red;
+  }
+  
+  .custom-button.warn:hover {
+    background-color: darkred;
+  }
+  
+  .custom-button.hint {
+    font-style: italic;
+  }
+  
