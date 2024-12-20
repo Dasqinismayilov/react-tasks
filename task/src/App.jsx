@@ -4,9 +4,7 @@ import Dice from "./components/Dice";
 function App() {
   return (
     <div className="dice-container">
-      tgrtt
-      <Dice />
-      <Dice />
+      <Node/>
     </div>
   );
 }
